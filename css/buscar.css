@@ -1,0 +1,50 @@
+/* styles.css */
+
+body {
+    font-family: consolas;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20pt;
+}
+
+#search {
+    width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0px auto;
+    display: block;
+    border:solid 2px #f70039;
+    border-radius: 10px;
+    background-color: none;
+}
+
+#results {
+    margin: 0px auto;
+    display: block;
+    width: 350px;
+    margin-top: 10px;
+    text-align: center; /* Alinea horizontalmente al centro */
+}
+
+/* Estilos para los enlaces */
+#results a {
+    display: block;
+    background-color: #f70039;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    line-height: 2; /* Alinea verticalmente al centro */
+}
+
+#results a:hover {
+    background-color: #f52e5c;
+}
+

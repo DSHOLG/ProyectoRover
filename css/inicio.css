@@ -1,0 +1,137 @@
+
+body {
+   /* background-image: url(../img/Screenshot_1.png);
+    background-repeat: no-repeat;
+    */
+    background-color: #fff;
+    background-size: cover;
+    font-family: consolas;
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #f4b300;
+}
+
+/* Estilos de la sección "Sobre Nosotros" */
+.about {
+    position: relative; /* Establece una posición relativa para el artículo */
+    padding: 20px; /* Añade espacio para que el contenido sea legible */
+    color: white; /* Color del texto en el artículo (para contrastar con el fondo) */
+    text-align: center;
+    font-size: 24px;
+    text-decoration: underline;
+    font-family: consolas;
+}
+
+.about::before {
+    content: ""; /* Agrega un contenido vacío para el pseudoelemento */
+    position: absolute; /* Establece una posición absoluta */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../img/chicos.jpeg'); /* Ruta o URL de tu imagen */
+    background-size: cover; /* Ajusta la imagen al tamaño del artículo sin distorsionarla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    filter: blur(4px); /* Ajusta la cantidad de desenfoque según tus preferencias */
+    z-index: -1; /* Coloca el pseudoelemento detrás del contenido del artículo */
+    height: 300px;
+    width: 100%;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de la sección de artículos */
+.articles {
+    padding: 40px;
+    text-align: center;
+}
+
+.articles h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#berthier{
+    background-color: white;
+}
+
+#manada{
+    background-color: #f1c832;
+}
+
+#unidad{
+    background-color: #34a259;
+}
+
+#caminantes{
+    background-color: #00acea;
+}
+
+#rover{
+    background-color: #c20e1a;
+}
+
+.article {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+}
+
+.article h3 {
+    font-size: 20px;
+}
+
+.article p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.article a {
+    display: inline-block;
+    background-color: #f70039;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.article a:hover {
+    background-color: #fa1047;
+}
+
+.logout-button {
+    display: inline-block;
+    background-color: #f70039;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px){
+    .about{
+        font-size: 14.5pt;
+    }
+}

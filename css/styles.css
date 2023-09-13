@@ -1,0 +1,95 @@
+body{
+    font-family: Consolas;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Crea columnas automáticas */
+    gap: 20px; /* Espacio entre las imágenes */
+    padding: 20px; /* Espacio alrededor del contenedor de imágenes */
+  }
+  
+  .login-container {
+      position: relative;
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+      width: 300px;
+      height: 350px;
+      z-index: 1;
+  }
+  
+  h2{
+    text-align: center;
+    font-size: 26pt;
+    z-index: 1;
+    color: #f70039;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: -20px;
+    font-size: 15pt;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input::placeholder{
+    color: #fa7878;
+  }
+
+  input {
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border: 1px solid #fc0404;
+    border-radius: 4px;
+  }
+  
+  .imagen{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+  }
+
+  .boton {
+    padding: 15px;
+    background-color: #FC2F2F;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+  }
+  
+  .boton:hover {
+    background-color: #f70039;
+  }
+
+
+  .image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+img{
+    position: absolute;
+    max-width: 150px;
+}
+  
